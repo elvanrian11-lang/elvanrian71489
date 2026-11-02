@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biodata Pribadi</title>
+<style>
+  :root{
+    --bg:#f3f6f4; --card:#ffffff; --ink:#1d2b27; --muted:#5d6e68;
+    --accent:#1f7a6b; --accent-soft:#d9eee9; --line:#d5e0dc;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#101a17; --card:#18251f; --ink:#e6f0ec; --muted:#9db3ab; --accent:#4cc3ad; --accent-soft:#1f3a33; --line:#2a3d36; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  header{background:var(--accent);color:#fff;padding:56px 20px 48px;text-align:center}
+  .foto-profil{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid #fff;background:var(--accent-soft);margin-bottom:16px}
+  header h1{font-size:2.2rem;letter-spacing:.5px}
+  header p{opacity:.9;font-style:italic}
+  nav{display:flex;justify-content:center;gap:24px;padding:14px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;flex-wrap:wrap}
+  nav a{color:var(--ink);text-decoration:none;font-weight:bold}
+  nav a:hover,nav a:focus-visible{color:var(--accent);outline:none;text-decoration:underline}
+  main{max-width:900px;margin:0 auto;padding:32px 20px 60px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px;margin-bottom:28px}
+  h2{color:var(--accent);margin-bottom:16px;font-size:1.5rem}
+  table{width:100%;border-collapse:collapse}
+  td{padding:10px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+  td:first-child{width:38%;font-weight:bold;color:var(--muted)}
+  .hobi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+  .hobi div{background:var(--accent-soft);border-radius:8px;padding:16px}
+  .hobi h3{font-size:1.05rem;margin-bottom:4px}
+  .hobi p{font-size:.92rem;color:var(--muted)}
+  .galeri{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  figure{margin:0}
+  figure img,figure video{width:100%;height:240px;object-fit:cover;border-radius:8px;background:var(--accent-soft);display:block}
+  figcaption{font-size:.9rem;color:var(--muted);margin-top:6px;text-align:center}
+  h3.sub{margin:22px 0 10px;font-size:1.1rem}
+  footer{text-align:center;padding:20px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="foto-profil" src="fotoelvan" alt="Foto profil" onerror="this.style.visibility='hidden'">
+  <h1>Elia Elvan Rian</h1>
+  <p> Mahasiswa &mdash; Banjarbaru, Kalimantan Selatan</p>
+</header>
+
+<nav>
+  <a href="#biodata">Biodata</a>
+  <a href="#hobi">Hobi</a>
+  <a href="#galeri">Galeri</a>
+</nav>
+
+<main>
+  <section id="biodata">
+    <h2>Biodata Pribadi</h2>
+    <table>
+      <tr><td>Elia Elvan Rian</td><td>Elia E;van Rian</td></tr>
+      <tr><td>Tempat, Tanggal Lahir</td><td>Pagatan, 11 Januari 2005</td></tr>
+      <tr><td>Jenis Kelamin</td><td>Laki-laki</td></tr>
+      <tr><td>Agama</td><td>Kristen</td></tr>
+      <tr><td>Alamat</td><td>Banjarbaru, Kalimantan Selatan</td></tr>
+      <tr><td> Universitas Lambung Mangkurat</td></tr>
+      <tr><td>Email</td><td>eliaelvanrian12@.gmail.com</td></tr>
+      <tr><td>No. Telepon</td><td>0812-3456-7890</td></tr>
+    </table>
+  </section>
+
+  <section id="hobi">
+    <h2>Hobi</h2>
+    <div class="hobi">
+      <div><h3>Membaca</h3><p>Menambah wawasan lewat buku dan artikel.</p></div>
+      <div><h3>Mancing</h3><p>Menjernihkan Pikiran.</p></div>
+      <div><h3>Fotografi</h3><p>Mengabadikan momen dan keindahan alam.</p></div>
+      <div><h3>Musik</h3><p>Mendengarkan dan menikmati lagu favorit.</p></div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri</h2>
+
+    <h3 class="sub">Foto</h3>
+    <div class="galeri">
+      <figure>
+        <img src="foto1.jpg" alt="Foto 1">
+        <figcaption>Foto 1 &ndash; ganti dengan keterangan Anda</figcaption>
+      </figure>
+      <figure>
+        <img src="foto2.jpg" alt="Foto 2">
+        <figcaption>Foto 2 &ndash; ganti dengan keterangan Anda</figcaption>
+      </figure>
+      img src="foto2.jpg" alt="Foto 2">
+        <figcaption>Foto 2 &ndash; ganti dengan keterangan Anda</figcaption>
+      </figure>
+      img src="foto2.jpg" alt="Foto 2">
+        <figcaption>Foto 2 &ndash; ganti dengan keterangan Anda</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="sub">Video</h3>
+    <div class="galeri">
+      <figure>
+        <video controls preload="metadata">
+          <source src="video1.mp4" type="video/mp4">
+          Browser Anda tidak mendukung video.
+        </video>
+        <figcaption>Video 1 &ndash; ganti dengan keterangan Anda</figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata">
+          <source src="video2.mp4" type="video/mp4">
+          Browser Anda tidak mendukung video.
+        </video>
+        <figcaption>Video 2 &ndash; ganti dengan keterangan Anda</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 Nama Lengkap Anda</footer>
+
+</body>
+</html>
